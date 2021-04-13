@@ -6,17 +6,17 @@
 ;Funcion2
 (defn pendienteFuncion [x1 x2 y1 y2]
   (cond
-    (< (/ (- y2 y1)(- x2 x1)) 0) "La pendiente es decreciente"
-    (= (/ (- y2 y1)(- x2 x1)) 0) "La pendiente es constante"
-    (> (/ (- y2 y1)(- x2 x1)) 0) "La pendiente es creciente"))
+    (< (/ (- y2 y1)(- x2 x1)) 0) "Esta pendiente es decreciente"
+    (= (/ (- y2 y1)(- x2 x1)) 0) "Esta pendiente es constante"
+    (> (/ (- y2 y1)(- x2 x1)) 0) "Esta pendiente es creciente"))
 
 (pendienteFuncion -2 0 -4 2)
 ;;-----------------------------------
 ;Funcion3
 (defn Punto_Recta_Funcion [m b x y]
 (cond
-  (=(funcionlineal m b x) y) "El punto esta en la recta"
-  :else "El punto NO esta en la recta"))
+  (=(funcionlineal m b x) y) "Este punto esta en la recta"
+  :else "Este punto NO esta en la recta"))
 
 (Punto_Recta_Funcion 4 5 6 26)
 
